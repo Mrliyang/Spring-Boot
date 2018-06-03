@@ -1,0 +1,6 @@
+server:
+  port: 8090
+  path: /springboot
+
+logging:
+  config: classpath:log4j2.xml
