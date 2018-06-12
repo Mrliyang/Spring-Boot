@@ -14,7 +14,7 @@
 
     <modules>
         <module>SpringBootBegin</module>
-        <module>BeanTransform</module>
+        <module>JavaBeanTransform</module>
     </modules>
 
     <dependencyManagement>
