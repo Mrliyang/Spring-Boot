@@ -1,7 +1,7 @@
-package com.yangs.springbootbegin.controller;
+package com.yangs.springbootemail.controller;
 
-import com.yangs.springbootbegin.bean.User;
-import com.yangs.springbootbegin.service.impl.UserServiceImpl;
+import com.yangs.springbootemail.bean.User;
+import com.yangs.springbootemail.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

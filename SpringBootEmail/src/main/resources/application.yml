@@ -1,0 +1,17 @@
+server:
+  port: 8091
+  contextPath: /SpringBootEmail
+
+logging:
+  config: classpath:log4j2.xml
+
+spring:
+  mail:
+    host: smtp.163.com
+    username: Mrli_yang@163.com
+    password: liyang0913
+    default-encoding: UTF-8
+
+mail:
+  fromMail:
+    addr: Mrli_yang@163.com

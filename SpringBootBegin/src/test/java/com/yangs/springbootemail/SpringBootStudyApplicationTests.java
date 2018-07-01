@@ -1,4 +1,4 @@
-package com.yangs.springbootbegin;
+package com.yangs.springbootemail;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

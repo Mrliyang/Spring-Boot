@@ -1,7 +1,7 @@
-package com.yangs.springbootbegin.dao.impl;
+package com.yangs.springbootemail.dao.impl;
 
-import com.yangs.springbootbegin.bean.User;
-import com.yangs.springbootbegin.dao.IUserDao;
+import com.yangs.springbootemail.bean.User;
+import com.yangs.springbootemail.dao.IUserDao;
 import org.springframework.stereotype.Repository;
 
 @Repository

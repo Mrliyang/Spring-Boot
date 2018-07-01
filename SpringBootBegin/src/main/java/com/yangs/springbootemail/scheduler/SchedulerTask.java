@@ -1,4 +1,4 @@
-package com.yangs.springbootbegin.scheduler;
+package com.yangs.springbootemail.scheduler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;

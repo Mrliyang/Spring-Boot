@@ -1,4 +1,4 @@
-package com.yangs.springbootbegin.bean;
+package com.yangs.springbootemail.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,6 +1,6 @@
-package com.yangs.springbootbegin;
+package com.yangs.springbootemail;
 
-import com.yangs.springbootbegin.service.impl.UserServiceImpl;
+import com.yangs.springbootemail.service.impl.UserServiceImpl;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
