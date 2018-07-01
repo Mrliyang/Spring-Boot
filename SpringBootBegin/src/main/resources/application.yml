@@ -1,6 +1,6 @@
 server:
   port: 8090
-  contextPath: /springboot
+  contextPath: /SpringBootBegin
 
 logging:
   config: classpath:log4j2.xml

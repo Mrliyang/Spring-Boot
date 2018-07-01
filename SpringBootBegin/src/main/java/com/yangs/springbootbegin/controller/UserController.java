@@ -14,8 +14,14 @@ public class UserController {
     @Autowired
     private UserServiceImpl userService;
 
+    @PostMapping("hello")
+    public String sayHello() {
+        return "hello spring boot";
+    }
+
     @GetMapping("/user")
-    public User findUserById(@RequestParam("id") int id) {
+    public User getUserById(@RequestParam("id") int id) {
         return userService.findUserById(id);
     }
+
 }
