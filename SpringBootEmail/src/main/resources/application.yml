@@ -8,11 +8,12 @@ logging:
 spring:
   mail:
     host: smtp.163.com
-    username: Mrli_yang@163.com
+    # 163邮箱
+    username: **********
     # 163邮箱客户端授权码或者登陆密码
-    password: ly199109131812
+    password: **********
     default-encoding: UTF-8
 
 mail:
   fromMail:
-    addr: Mrli_yang@163.com
+    addr: **********

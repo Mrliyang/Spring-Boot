@@ -77,6 +77,13 @@ public class MailServiceImpl implements IMailService {
         }
     }
 
+    /**
+     * 发送带附件的邮件
+     * @param to
+     * @param subject
+     * @param content
+     * @param filePath
+     */
     public void sendAttachmentsMail(String to, String subject, String content, String filePath) {
         MimeMessage message = mailSender.createMimeMessage();
 
@@ -96,6 +103,35 @@ public class MailServiceImpl implements IMailService {
             log.info("带附件的邮件已经发送");
         } catch (MessagingException e) {
 
+        }
+    }
+
+    /**
+     * 发送正文中有静态资源（图片）的邮件
+     * @param to
+     * @param subject
+     * @param content
+     * @param rscPath
+     * @param rscId
+     */
+    public void sendInlineResourceMail(String to, String subject, String content, String rscPath, String rscId) {
+        MimeMessage message = mailSender.createMimeMessage();
+
+        try {
+            MimeMessageHelper messageHelper = new MimeMessageHelper(message, true);
+
+            messageHelper.setFrom(from);
+            messageHelper.setTo(to);
+            messageHelper.setSubject(subject);
+            messageHelper.setText(content, true);
+
+            FileSystemResource res = new FileSystemResource(new File(rscPath));
+            messageHelper.addInline(rscId, res);
+
+            mailSender.send(message);
+            log.info("嵌入静态资源的邮件已经发送");
+        } catch (MessagingException e) {
+            log.error("发送嵌入静态资源的邮件时发生异常！", e);
         }
     }
 }
